@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.JobDetailsActivity"
+    android:background="@color/gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:id="@+id/titleTextJobDetailsActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job Title"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/wageTextJobDetailsActivity"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ücret: 100TL"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/cityTextJobDetailsActivity"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Karşıyaka/İzmir"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İş Detayları"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:id="@+id/descriptionTextJobDetailsActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job details"
+                android:textColor="@color/text_gray"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İşveren bilgileri"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:id="@+id/userNameTextJobDetailsActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rıza Doğukan Koşar"
+                android:textColor="@color/text_gray"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/userPhoneTextJobDetailsActivity"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="05434497929"
+                android:textColor="@color/text_gray"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/deleteAdvertButton"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="80dp"
+            android:text="İlanı sil"
+            android:visibility="invisible"
+            android:clickable="false"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.LoginActivity"
+    android:orientation="vertical"
+    android:background="@color/red">
+
+    <ImageView
+        android:id="@+id/biglogo_imageview"
+        android:adjustViewBounds="true"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/logo_long"
+         />
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginLeft="40dp"/>
+    <EditText
+        android:background="@drawable/phone_text_corner"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/editTextemail"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textEmailAddress"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Şifre"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginLeft="40dp"/>
+    <EditText
+        android:background="@drawable/phone_text_corner"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/editTextpassword"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:onClick="Login"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/white"
+        android:text="Giriş"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"/>
+    <Button
+        android:onClick="GoSignActivity"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/white"
+        android:text="Kayıt Ol"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"/>
+
+
+</LinearLayout>

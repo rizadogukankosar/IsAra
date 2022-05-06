@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:background="@color/red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nameTextProfileActivity"
+                android:paddingTop="30dp"
+                android:paddingBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="İsim"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/phoneTextProfileActivity"
+                android:paddingBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Telefon:"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="15dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:onClick="NewAdvert"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/dark_red"
+            android:text="YENİ İLAN OLUŞTUR"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"/>
+        <Button
+            android:onClick="MyAdverts"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/red"
+            android:text="İLANLARIM"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:onClick="SignOut"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="80dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/dark_red"
+            android:text="ÇIKIŞ YAP"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"/>
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.CreateAdvert"
+    android:background="@color/dark_red">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/biglogo_imageview"
+            android:adjustViewBounds="true"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/logo_long"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="İlan Başlığı:"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/advertTitleTextCreateAdvertActivity"
+                android:background="@drawable/phone_text_corner"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:padding="10dp"
+                android:ems="10"
+                android:gravity="start"
+                android:inputType="text"
+                android:maxLength="30"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="İlan Açıklaması:"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/descriptionTextCreateAdvertActivity"
+                android:background="@drawable/textcorner_big"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:ems="10"
+                android:padding="10dp"
+                android:gravity="start"
+                android:inputType="textMultiLine"
+                android:maxLength="250"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ücret: (TL) "
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/wageTextCreateAdvertActivity"
+                android:background="@drawable/phone_text_corner"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:padding="10dp"
+                android:ems="10"
+                android:gravity="start"
+                android:inputType="number"
+                android:maxLength="5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Şehir: "
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+            <Spinner
+                android:id="@+id/citiesSpinnerCreateAdvertActivity"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/phone_text_corner"/>
+
+            <Button
+                android:id="@+id/shareAdvertButton"
+                android:onClick="ShareAdvertButton"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:layout_gravity="center"
+                android:text="Yayınla"
+                android:textColor="@color/dark_red"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginTop="25dp"
+                />
+            <ProgressBar
+                android:id="@+id/progressBarCreateAdvertActivity"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="80dp"
+                android:indeterminate="true"
+                android:indeterminateTintMode="src_atop"
+                android:indeterminateTint="@color/white"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</ScrollView>
